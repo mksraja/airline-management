@@ -1,0 +1,62 @@
+<div style="vertical-align: top">
+	<form name="searchForm" ng-submit="searchForm.$valid && search()">
+		<div>
+			<input id="code" name="code"
+				placeholder="Country Code to Search US|NL|AR" class="form-control"
+				type="text" ng-model="code" ng-required="!country"/>
+		</div>
+		<div>
+			<input id="counrty" name="counrty"
+				placeholder="Country to Search United States|Zimb"
+				class="form-control" type="text" ng-model="country" ng-required="!code"/>
+		</div>
+		<div>
+			<input id="btnFind" type="submit"
+				class="primarybtn form-control-input" value="Search" />
+		</div>
+	</form>
+</div>
+<div class="col-xxs-10 col-xs-11 col-sm-11 col-md-11 col-lg-11"></div>
+<div class="container-fluid">
+	<div class="col-xxs-12 col-md-12 top-margin10">
+		<div class="col-xxs-12 col-md-12">
+			<h5>Results</h5>
+		</div>
+		<div class="table-responsive col-md-12">
+			<table class="sortable table top-margin10">
+				<colgroup>
+					<col class="widthP11" />
+					<col class="widthP12" />
+					<col class="widthP11" />
+					<col class="widthP11" />
+					<col class="widthP11" />
+					<col class="widthP11" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>ID</th>
+						<th>Code</th>
+						<th>Country</th>
+						<th>Airport Type</th>
+						<th>Runway</th>
+						<th>Type</th>
+					</tr>
+					<tr ng-repeat="airport in airports">
+						<td id="id">{{airport.id}}</td>
+						<td id="code">{{airport.isoCountry}}</td>
+						<td id="location">{{airport.countryName}}</td>
+						<td id="location">{{airport.type}}</td>
+						<td colspan="2">
+							<table>
+								<tr ng-repeat="runway in airport.runways">
+									<td id="city">{{runway.airportIdent}}</td>
+									<td id="postcode">{{runway.surface}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

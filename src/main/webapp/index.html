@@ -1,0 +1,32 @@
+<html>
+<head>
+<base href="" />
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header.css">
+
+<script src="scripts/libs/angular.min.js"></script>
+<script src="scripts/libs/angular-resource.js"></script>
+<script src="scripts/libs/angular-route.js"></script>
+<script src="scripts/libs/angular-ui-router.js"></script>
+<script src="scripts/libs/ngStorage.min.js"></script>
+
+<script src="scripts/modules/app.js"></script>
+<script src="scripts/services/report-service.js"></script>
+<script src="scripts/services/query-service.js"></script>
+<script src="scripts/controllers/query-controller.js"></script>
+<script src="scripts/controllers/reports-controller.js"></script>
+
+
+</head>
+<body ng-app="testApp">
+	<h2 align="center">Airline Management System</h2>
+	<div id="content">
+		<div ui-view="headerView"></div>
+	</div>
+	<div id="main">
+		<div ui-view="mainView"></div>
+	</div>
+	<div id="footer" ng-include src="'footer.html'"></div>
+</body>
+</html>

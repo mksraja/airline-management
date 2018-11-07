@@ -1,0 +1,208 @@
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.a_green{
+border-bottom:5px solid #009286;
+
+}
+
+.a_green:hover{
+border-bottom:5px solid #005E5D;
+}
+.linkmobile{
+color:black;
+}
+.navbar-default .navbar-nav > li:hover{
+    
+    background-color: #005E5D;
+
+	}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    
+    border-color: #009286;
+}
+
+.menuList {
+	background: #009286 no-repeat 35px 0px;
+	height: 36px;
+	margin-top: -11px;
+}
+@media (min-width: 1320px) {
+    .menuList {
+        background: #009286 no-repeat 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+.linkmobile{
+color:white !important;
+}
+}
+
+.headerLogo {
+	height: 40px; 
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+li {
+    display: inline;
+}
+
+.menuList ul {
+	list-style: none;
+	margin-left:75px;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	outline: none;
+}
+
+.header {
+	background: no-repeat center bottom;
+	background-color: #fff;
+	min-height: 85px;
+	text-align: center;
+	font: 16px/22px Arial, helvetica, sans-serif;
+	padding-top: 10px;
+	margin: 0 auto
+}
+
+.nav-main li {
+	margin: 0 auto;
+	padding-right: 6px !important;
+	text-align:center;
+}
+
+.menuList li {
+	float: left;
+}
+
+/*.active-item > a {
+	border-bottom: 5px solid #fdce05;
+	display: inline-block;
+	background-color: transparent !important;
+	padding: 0;
+}*/
+
+.active-item :hover {
+	background-color: transparent !important;
+} 
+
+.nav-main li a {
+	display: block;
+	color: #fff;
+	line-height: 20px;
+	padding: 6px;
+	text-decoration: none;
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+
+
+.header .headerMaintenance, .header .evotingMaintenance, .header .headerMaintenanceIntermediaryGeneralMeeting,
+	.header .headerMaintenanceIntermediaryUpload, .header .headerMaintenanceIntermediaryAccountMaintenance,
+	.header .headerMaintenanceAccountMaintenance, .header .headerMaintenanceVCGroup,
+	.header .headerMaintenanceShareHolderGroup, .header .headerMaintenanceIssuerGroup
+	{
+	position: absolute;
+	background-color: #ffffff;
+	z-index: 2;
+}
+
+.agentClass ul, .intermediaryClass ul, .intermediaryClass1 ul,
+	.intermediaryClass2  ul, .issuerClass ul, .issuerClass1 ul, .vcClass ul
+	{
+	list-style: none;
+	padding-left: 0px;
+	width: 170px;
+}
+
+.agentClass ul li, .intermediaryClass ul li, .intermediaryClass1 ul li,
+	.intermediaryClass2 ul li, .issuerClass ul li, .issuerClass1 ul li,
+	.vcClass ul li {
+	width: 160px;
+}
+
+.agentClass li a, .intermediaryClass li a, .intermediaryClass1 li a,
+	.intermediaryClass2  li a, .issuerClass li a, .issuerClass1 li a,
+	.vcClass li a {
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 13px;
+	text-align: left;
+	width: 170px;
+}
+
+.headercol{
+text-align: right; 
+margin-top: 10PX; 
+margin-bottom: 10PX;
+}
+.logout{
+text-align: left !important; 
+
+}
+.colpad{
+padding:0;
+}
+.navbar {
+    border-radius: 0px !important;
+}   
+.divider{
+  height:1px;
+  background-color:white;
+  overflow:hidden;
+  margin:9px 0px;
+}
+
+@media screen and (min-width:768px)
+{
+.mobile-only {
+ display:none !important;
+}
+}
+@media screen and (max-width:767px)
+{
+.desktopView {
+ display:none !important;
+ 
+}
+.logout{
+text-align: right !important; 
+
+}
+}
+
+.li-header {
+    padding-left: 10px;
+    padding-right: 10px
+} 
+
+.nav > li>a{
+padding: 8px 10px;
+padding-bottom:0px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #009286;
+}
+
+.backgroundColorGreen {
+    background: #009286;
+}
+
+
+.navbar-collapse{
+    border-top:none !important;
+}
+

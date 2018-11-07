@@ -1,0 +1,97 @@
+<div class="col-xxs-10 col-xs-11 col-sm-11 col-md-11 col-lg-11"></div>
+<div class="container-fluid">
+	<div class="col-xxs-12 col-md-12 top-margin10">
+		<div class="col-xxs-12 col-md-12"></div>
+
+		<div class="table-responsive col-md-12">
+			<table class="sortable table top-margin10">
+				<colgroup>
+					<col class="widthP11" />
+					<col class="widthP12" />
+					<col class="widthP11" />
+					<col class="widthP11" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th colspan="4">Top 10 Highest Airports</th>
+					</tr>
+					<tr>
+						<th>Ident</th>
+						<th>Code</th>
+						<th>Country</th>
+						<th>Count</th>
+					</tr>
+					<tr ng-repeat="highAirport in highestAirports ">
+						<td id="id">{{highAirport.ident}}</td>
+						<td id="code">{{highAirport.isoCountry}}</td>
+						<td id="location">{{highAirport.countryName}}</td>
+						<td id="location">{{highAirport.countryCnt}}</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th colspan="4">Top 10 Lowest Airports</th>
+					</tr>
+					<tr>
+						<th>Ident</th>
+						<th>Code</th>
+						<th>Country</th>
+						<th>Count</th>
+					</tr>
+					<tr ng-repeat="lowAirport in lowestAirports ">
+						<td id="id">{{lowAirport.ident}}</td>
+						<td id="code">{{lowAirport.isoCountry}}</td>
+						<td id="location">{{lowAirport.countryName}}</td>
+						<td id="location">{{lowAirport.countryCnt}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="table-responsive col-md-12">
+			<table class="sortable table top-margin10">
+				<colgroup>
+					<col class="widthP11" />
+					<col class="widthP12" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th colspan="2">Common Runways</th>
+					</tr>
+					<tr>
+						<th>Runway</th>
+						<th>Count</th>
+					</tr>
+					<tr ng-repeat="runway in commonRunways ">
+						<td id="id">{{runway.leIdent}}</td>
+						<td id="code">{{runway.commonIdentCnt}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="table-responsive col-md-12">
+			<table class="sortable table top-margin10">
+				<colgroup>
+					<col class="widthP11" />
+					<col class="widthP12" />
+					<col class="widthP11" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th colspan="3">Type of Runways</th>
+					</tr>
+					<tr>
+						<th>Code</th>
+						<th>Country</th>
+						<th>Runway Type</th>
+					</tr>
+					<tr ng-repeat="runwayType in runwayTypes ">
+						<td id="id">{{runwayType.airport.countryName}}</td>
+						<td id="code">{{runwayType.airport.isoCountry}}</td>
+						<td id="location">{{runwayType.surface}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
